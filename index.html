@@ -3,7 +3,7 @@
         <head>
                 <title>Bar Chart</title>
                 <script src="/js/Charts.js"></script>
-                <link rel="stylesheet" type="text/css" href="/css/bootstrap3.css">
+                <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
                 <meta name = "viewport" content = "initial-scale = 1, user-scalable = no">
                 <style>
                         canvas{
@@ -15,11 +15,123 @@
 
                                 position: relative;
                         }
+
+                        .subtitle {
+                            color: #4A4A4A;
+                            font-size: 18pt;
+                        }
                 </style>
         </head>
-        <body>
+    <body>
 
-    <div class="fullscreen" >
+<div class="container">
+    <div class="row">
+        <div class="col-md-9  col-md-offset-3">
+            <h1 class="text-center">Applying Systems Science and Electrical Engineering Topics in Quantitative Finance. </h1>
+            <p class="subtitle text-right">a project by Desmond R. Duggan and Andrew C. Hess</p>
+        </div> 
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div data-spy="affix" class="affix hidden-phone sidebar">
+                <div class="pad-nav">
+                    <h2>Senior Design<br/></h2>
+                    <ul class="nav nav-list" id="navigation">
+                    <li><a href="#title" class="to-title"> Introduction</a></li>
+                    <li><a href="#abstract" class="to-abstract"> Abstract</a></li>
+                    <li><a href="#background" class="to-background"> Background</a></li>
+                    <li><a href="#example" class="to-example"> Motivating Example</a></li>
+                    <li><a href="#approach" class="to-approach"> Approach</a></li>
+                    <li><a href="#model" class="to-model"> Model</a></li>
+                    <li><a href="#implementation" class="to-implementation"> Implementation</a></li>
+                    <li><a href="#conclusion" class="to-conclusion"> Conclusion</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+
+<div class="row" id="background">
+    <div class="col-md-9 col-md-offset-3">
+
+
+<h2>Background</h2>
+
+<hr />
+
+<p>In 2009, it was estimated that quantitative trading firms, which represented 2% of the number of trading firms operating in US markets, accounted for around 70% of all equity trading volume [key-2]. Although this number has since decreased, it demonstrates the extraordinary growth in quantitative finance that was experienced in the last decade.</p>
+
+<p>Such fast paced growth was facilitated by major advancements in communications systems that took place in parallel. Computers have vastly decreased communication times and eliminated much of the simple arbitrage that existed since the inception of the capital markets.</p>
+
+<p>Many orders placed by these firms are executed with pre-programmed electronic instructions that are designed by mathematically inclined traders. The content of these instructions is a highly guarded secret within each firm, and it's often the case that an algorithm has a limited lifetime where it is able to take advantage of discovered arbitrage opportunities before the markets adjust or other firms develop similar strategies and the opportunity is minimized [key-3].</p>
+
+<p>This project is concerned with how topics in systems science and electrical engineering may be applied to this industry. Many topics such as control theory, signal processing and optimization are relevant to high frequency trading. Engineers who study systems science often seek to discover the signal through the noise or optimize a constrained mathematical model. Similarly, traders seek to optimize their portfolios and discover arbitrage opportunities.</p>
+
+<h2>Problem Statement</h2>
+
+<p>Analyze the effectiveness of various systems science and electrical engineering prediction methods in tracking the price of financial instruments in the stock market.</p>
+
+<h2>Experiment Overview</h2>
+
+<h3>Application of Systems Science and Electrical Engineering Topics</h3>
+
+<p>In this paper, we explore the following systems science and electrical engineering topics:</p>
+
+<p><strong>Double Moving Average</strong></p>
+
+<p>The double moving average algorithm is a widely known, simple example of an algorithmic trading strategy. It works by trading an equity when its short and long moving averages cross, thereby indicating momentum.</p>
+
+<p><strong>Wiener Filter</strong></p>
+
+<p>The wiener filter is an algorithm that seeks to filter out noise in order to estimate the true underlying signal. The method assumes the signal is a linear stochastic process with known autocorrelation and seeks to minimize the error between the actual signal and its measurements.</p>
+
+<p><strong>The Kalman Filter</strong></p>
+
+<p>The Kalman Filter is a recursive algorithm that uses measurements observed over time to predict the value of future measurements. It has been proven to be an effective estimator for many real world applications. However, the Kalman Filter requires a mathematical model for the system it tracks. In this project we implement a simplified version of the Kalman Filter called the Alpha-Beta-Gamma Filter, which does not require a rigorous mathematical model.</p>
+
+<p><strong>Linear Prediction Model</strong></p>
+
+<p>In this project, a linear prediction model is used to estimate future financial instrument prices by training on recent historical data. This model works by using 1000 historical data points to predict 1 future point.</p>
+
+<p><strong>Trading Simulation</strong></p>
+
+<p>For this project, we constructed a trading simulator in Python, a highly versatile dynamically typed programming language. We define a Trade Algorithm as the highest level object in the simulation. Each Trade Algorithm is initialized with an estimator type, price history for a single financial instrument and an empty Portfolio Object with $100,000 of starting capital. Then the simulation is run over the price history, making trades based on the projected price in the following time step.</p>
+
+<h3>List of Simulator Data Structures</h3>
+
+<ul>
+<li><p><strong>TradeAlgorithm</strong>:  Top level controller for the trading simulation, executes the trading strategy.</p></li>
+<li><p><strong>Portfolio</strong>:  Maintains current available capital and a list of assets.</p></li>
+<li><p><strong>Asset</strong>:  An object unique to each financial instrument that maintains how many units are owned in the Portfolio.</p></li>
+<li><p><strong>Order</strong>:  A small data structure to facilitate transactions.</p></li>
+</ul>
+
+
+<h3>Summarized Simulation Procedure</h3>
+
+<ol>
+<li><p>Initialize TradeAlgorithm with price history and algorithm type.</p></li>
+<li><p>Iterate over the price history.</p></li>
+<li><p>Note the current price and calculate the projected price using one of the estimators.</p></li>
+<li><p>If the projected price is greater than the current price, place a “BUY” order for 1 unit at the current price. If the projected price is less than the current price, place a “SELL” order at the current price.</p></li>
+<li><p>Once the all of the data has been processed, sell all remaining assets at the last noted price.</p></li>
+</ol>
+
+
+
+
+</div>
+</div>
+
+
+
+
+</div>
+
+ <!--    <div class="fullscreen" >
         <div class="container">
             <div class="row" style="margin-top:50px;">
                 <div class="col-md-12">
@@ -27,9 +139,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
         <script type="text/javascript" src="/js/app.js"></script>
+        <script type="text/javascript" src="/js/bootstrap.min.js"></script>
         </body>
 </html>
