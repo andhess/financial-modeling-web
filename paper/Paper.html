@@ -4,59 +4,19 @@
 <head><title>The Application of Systems Science and Electrical Engineering Topics in Quantitative
 Finance</title> 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
-
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)"> 
+<!-- html --> 
 <meta name="src" content="Paper.tex"> 
 <meta name="date" content="2013-12-13 11:30:00"> 
-<link rel="stylesheet" type="text/css" href="/css/Paper.css"> 
-<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-<meta name = "viewport" content = "initial-scale = 1, user-scalable = no">
-
-
-<style type="text/css">
-
-  img {
-     max-width:75%;
-  }
-
-</style>
-
-</head>
-
-
-<body data-spy="scroll" data-target="#side-nav">
-
-<div class="container">
-    <div class="row hidden-sm hidden-xs">
-        <div class="col-md-3">
-            <div id="side-nav">
-                <div data-spy="affix" class="affix sidebar">
-                    <div class="pad-nav">
-                        <h2>Senior Design<br/></h2>
-                        <ul class="nav nav-pills nav-stacked" id="navigation">
-                            <li><a href="#title" class="to-title"> Title</a></li>
-                            <li><a href="#abstract" class="to-abstract"> Abstract</a></li>
-                            <li><a href="#background" class="to-background"> Background</a></li>
-                            <li><a href="#dma" class="to-dma"> Double Moving Average</a></li>
-                            <li><a href="#wiener" class="to-wiener"> Winer Filter</a></li>
-                            <li><a href="#abg" class="to-abg"> Kalman Filter</a></li>
-                            <li><a href="#linear" class="to-linear"> Linear Prediction</a></li>
-                            <li><a href="#linear" class="to-implementation"> Implementation</a></li>
-                            <li><a href="#linear" class="to-implementation"> Implementation</a></li>
-                            <li><a href="#linear" class="to-implementation"> Implementation</a></li>
-                        <li><a href="#conclusion" class="to-conclusion"> Conclusion</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-<div class="row">
-  <div class="col-md-9 col-xs-12 col-md-offset-3">
-
+<link rel="stylesheet" type="text/css" href="Paper.css"> 
+</head><body 
+>
 <div class="maketitle">
+                                                                                         
+                                                                                         
+                                                                                         
+                                                                                         
 
 <h2 class="titleHead">The Application of Systems Science and Electrical
 Engineering Topics in Quantitative Finance</h2>
@@ -81,6 +41,132 @@ Each topic was implemented in Python and uses the NumPy and SciPy libraries for
 advanced computation. Results show that some of the filters provide good insight at a very
 fundamental implementation, and when put into more advanced programs, may be extremely
 successful.
+                                                                                         
+                                                                                         
+<h2 class="likechapterHead"><a 
+ id="x1-2000"></a>Contents</h2> <div class="tableofcontents">
+<span class="chapterToc" >1 <a 
+href="#x1-30001" id="QQ2-1-3">Introduction and Background</a></span>
+<br />&#x00A0;<span class="sectionToc" >1.1 <a 
+href="#x1-40001.1" id="QQ2-1-4">Background</a></span>
+<br />&#x00A0;<span class="sectionToc" >1.2 <a 
+href="#x1-50001.2" id="QQ2-1-5">Problem Statement</a></span>
+<br /><span class="chapterToc" >2 <a 
+href="#x1-60002" id="QQ2-1-6">Experiment Overview</a></span>
+<br />&#x00A0;<span class="sectionToc" >2.1 <a 
+href="#x1-70002.1" id="QQ2-1-7">Application of Systems Science and Electrical Engineering Topics</a></span>
+<br />&#x00A0;<span class="sectionToc" >2.2 <a 
+href="#x1-80002.2" id="QQ2-1-8">Trading Simulation</a></span>
+<br /><span class="chapterToc" >3 <a 
+href="#x1-90003" id="QQ2-1-10">Double Moving Average</a></span>
+<br />&#x00A0;<span class="sectionToc" >3.1 <a 
+href="#x1-100003.1" id="QQ2-1-11">Theory</a></span>
+<br />&#x00A0;<span class="sectionToc" >3.2 <a 
+href="#x1-110003.2" id="QQ2-1-12">Design</a></span>
+<br />&#x00A0;<span class="sectionToc" >3.3 <a 
+href="#x1-120003.3" id="QQ2-1-13">Results</a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >3.3.1 <a 
+href="#x1-130003.3.1" id="QQ2-1-14">Trading Simulation Specifications</a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >3.3.2 <a 
+href="#x1-140003.3.2" id="QQ2-1-15">Net Profit</a></span>
+<br />&#x00A0;<span class="sectionToc" >3.4 <a 
+href="#x1-150003.4" id="QQ2-1-18">Evaluation</a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >3.4.1 <a 
+href="#x1-160003.4.1" id="QQ2-1-19">Choice of (<span 
+class="cmmi-12">W</span><sub><span 
+class="cmmi-8">l</span></sub>, <span 
+class="cmmi-12">W</span><sub><span 
+class="cmmi-8">s</span></sub>)</a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >3.4.2 <a 
+href="#x1-170003.4.2" id="QQ2-1-20">Conclusions</a></span>
+<br /><span class="chapterToc" >4 <a 
+href="#x1-180004" id="QQ2-1-21">The Wiener Filter</a></span>
+<br />&#x00A0;<span class="sectionToc" >4.1 <a 
+href="#x1-190004.1" id="QQ2-1-22">Theory</a></span>
+<br />&#x00A0;<span class="sectionToc" >4.2 <a 
+href="#x1-200004.2" id="QQ2-1-23">Design</a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >4.2.1 <a 
+href="#x1-210004.2.1" id="QQ2-1-24">Strict Step Size</a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >4.2.2 <a 
+href="#x1-220004.2.2" id="QQ2-1-25">Relaxed Step Size</a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >4.2.3 <a 
+href="#x1-230004.2.3" id="QQ2-1-26">Remark</a></span>
+<br />&#x00A0;<span class="sectionToc" >4.3 <a 
+href="#x1-240004.3" id="QQ2-1-27">Results</a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >4.3.1 <a 
+href="#x1-250004.3.1" id="QQ2-1-28">Trading Simulation Specifications</a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >4.3.2 <a 
+href="#x1-260004.3.2" id="QQ2-1-29">Net Profit</a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >4.3.3 <a 
+href="#x1-270004.3.3" id="QQ2-1-32">Predicted Price vs. Actual Price</a></span>
+<br />&#x00A0;<span class="sectionToc" >4.4 <a 
+href="#x1-300004.4" id="QQ2-1-39">Evaluation</a></span>
+                                                                                         
+                                                                                         
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >4.4.1 <a 
+href="#x1-310004.4.1" id="QQ2-1-40">Strict versus Relaxed Step Size</a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >4.4.2 <a 
+href="#x1-320004.4.2" id="QQ2-1-41">Short versus Long Step Size</a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >4.4.3 <a 
+href="#x1-330004.4.3" id="QQ2-1-42">Regarding the Validity of the Strict Implementation</a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >4.4.4 <a 
+href="#x1-340004.4.4" id="QQ2-1-43">Assessment of Trading Strategy</a></span>
+<br /><span class="chapterToc" >5 <a 
+href="#x1-350005" id="QQ2-1-44">The Kalman Filter</a></span>
+<br />&#x00A0;<span class="sectionToc" >5.1 <a 
+href="#x1-360005.1" id="QQ2-1-45">Theory</a></span>
+<br />&#x00A0;<span class="sectionToc" >5.2 <a 
+href="#x1-370005.2" id="QQ2-1-46">Design</a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >5.2.1 <a 
+href="#x1-380005.2.1" id="QQ2-1-47">Alpha-Beta-Gamma Filter Equations</a></span>
+<br />&#x00A0;<span class="sectionToc" >5.3 <a 
+href="#x1-390005.3" id="QQ2-1-48">Results</a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >5.3.1 <a 
+href="#x1-400005.3.1" id="QQ2-1-49">Trading Simulation Specifications</a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >5.3.2 <a 
+href="#x1-410005.3.2" id="QQ2-1-50">Net Profit</a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >5.3.3 <a 
+href="#x1-420005.3.3" id="QQ2-1-53">Predicted Price vs. Actual Price</a></span>
+<br />&#x00A0;<span class="sectionToc" >5.4 <a 
+href="#x1-430005.4" id="QQ2-1-56">Evaluation</a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >5.4.1 <a 
+href="#x1-440005.4.1" id="QQ2-1-57">Choice of <span 
+class="cmmi-12">&#x03B1; </span></a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >5.4.2 <a 
+href="#x1-450005.4.2" id="QQ2-1-59">Conclusions</a></span>
+<br /><span class="chapterToc" >6 <a 
+href="#x1-460006" id="QQ2-1-60">Linear Estimation</a></span>
+<br />&#x00A0;<span class="sectionToc" >6.1 <a 
+href="#x1-470006.1" id="QQ2-1-61">Theory</a></span>
+<br />&#x00A0;<span class="sectionToc" >6.2 <a 
+href="#x1-480006.2" id="QQ2-1-62">Design</a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >6.2.1 <a 
+href="#x1-490006.2.1" id="QQ2-1-63">Linear Model Example</a></span>
+<br />&#x00A0;<span class="sectionToc" >6.3 <a 
+href="#x1-500006.3" id="QQ2-1-64">Results</a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >6.3.1 <a 
+href="#x1-510006.3.1" id="QQ2-1-65">Trading Simulation Specifications</a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >6.3.2 <a 
+href="#x1-520006.3.2" id="QQ2-1-66">Net Profit</a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >6.3.3 <a 
+href="#x1-530006.3.3" id="QQ2-1-69">Predicted Price vs. Actual Price</a></span>
+<br />&#x00A0;<span class="sectionToc" >6.4 <a 
+href="#x1-540006.4" id="QQ2-1-72">Evaluation</a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >6.4.1 <a 
+href="#x1-550006.4.1" id="QQ2-1-73">Effect of filter length </a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >6.4.2 <a 
+href="#x1-560006.4.2" id="QQ2-1-76">Time Complexity Trade-Offs</a></span>
+<br />&#x00A0;&#x00A0;<span class="subsectionToc" >6.4.3 <a 
+href="#x1-570006.4.3" id="QQ2-1-77">Feasibility as an estimator</a></span>
+<br /><span class="chapterToc" >7 <a 
+href="#x1-580007" id="QQ2-1-78">Conclusions</a></span>
+<br />&#x00A0;<span class="sectionToc" >7.1 <a 
+href="#x1-590007.1" id="QQ2-1-79">Algorithm Comparison</a></span>
+<br /><span class="chapterToc" >8 <a 
+href="#x1-610008" id="QQ2-1-82">Code</a></span>
+<br />&#x00A0;<span class="sectionToc" >8.1 <a 
+href="#x1-620008.1" id="QQ2-1-83">Alpha Beta Gamma Filter</a></span>
+</div>
                                                                                          
                                                                                          
 <h2 class="chapterHead"><span class="titlemark">Chapter&#x00A0;1</span><br /><a 
@@ -179,7 +265,7 @@ class="list">
 <!--l. 197--><p class="noindent" ><hr class="figure"><div class="figure" 
 ><a 
  id="x1-8001r1"></a> <img 
-src="/paper/0_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_diagram.png" alt="PIC"  
+src="0_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_diagram.png" alt="PIC"  
 >
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;2.1: </span><span  
@@ -305,7 +391,7 @@ class="cmmi-12">A</span>) and subtracting the
 starting capital ($100,000).
 <center class="par-math-display" >
 <img 
-src="/paper/Paper0x.png" alt="P =  A - C
+src="Paper0x.png" alt="P =  A - C
            i
 " class="par-math-display" ></center>
                                                                                          
@@ -330,7 +416,7 @@ class="cmmi-8">s</span></sub>) = (25, 50)
                                                                                          
 
 <!--l. 301--><p class="noindent" ><img 
-src="/paper/1_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_dma-25-50.png" alt="PIC"  
+src="1_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_dma-25-50.png" alt="PIC"  
 >
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;3.1: </span><span  
@@ -362,7 +448,7 @@ class="cmmi-8">s</span></sub>) = (100, 200)
                                                                                          
 
 <!--l. 317--><p class="noindent" ><img 
-src="/paper/2_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_dma-100-200.png" alt="PIC"  
+src="2_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_dma-100-200.png" alt="PIC"  
 >
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;3.2: </span><span  
@@ -432,7 +518,7 @@ instruments. The equation below shows how a prediction will be made at each succ
 state:
 <center class="par-math-display" >
 <img 
-src="/paper/Paper1x.png" alt="       &#x2211;n
+src="Paper1x.png" alt="       &#x2211;n
 &#x02C6;Xi+1 =     &#x03C9;kXi- k
        k=0
 " class="par-math-display" ></center>
@@ -457,7 +543,7 @@ class="cmmi-12">W </span>can then be calculated as
 follows:
 <center class="par-math-display" >
 <img 
-src="/paper/Paper2x.png" alt="       -1
+src="Paper2x.png" alt="       -1
 W  = R x rdx
 " class="par-math-display" ></center>
                                                                                          
@@ -479,7 +565,7 @@ class="cmmi-8">k</span></sub> is the value of the weight that produces the small
 squared difference between the prediction and true value.
 <center class="par-math-display" >
 <img 
-src="/paper/Paper3x.png" alt="                &#x02C6;            2
+src="Paper3x.png" alt="                &#x02C6;            2
 &#x03C9;k =  argmin {(Xk+1  - Xk+1 ) }
 " class="par-math-display" ></center>
 <!--l. 418--><p class="nopar" >
@@ -529,7 +615,7 @@ class="cmmi-12">w </span>and determines which value will continually keep error 
 minimum.
 <center class="par-math-display" >
 <img 
-src="/paper/Paper4x.png" alt="          n&#x2211;-1
+src="Paper4x.png" alt="          n&#x2211;-1
 X&#x02C6;t- k+1 =     &#x03C9;kXt -k + wXt -n
           k=0
 " class="par-math-display" ></center>
@@ -538,12 +624,12 @@ X&#x02C6;t- k+1 =     &#x03C9;kXt -k + wXt -n
 <!--l. 449--><p class="nopar" >
 <center class="par-math-display" >
 <img 
-src="/paper/Paper5x.png" alt="&#x03C9;k = argmin { (X &#x02C6;t -k+1 - Xt- k+1)2}
+src="Paper5x.png" alt="&#x03C9;k = argmin { (X &#x02C6;t -k+1 - Xt- k+1)2}
 " class="par-math-display" ></center>
 <!--l. 454--><p class="nopar" >
 <center class="par-math-display" >
 <img 
-src="/paper/Paper6x.png" alt="        n
+src="Paper6x.png" alt="        n
 &#x02C6;      &#x2211;
 Xt+1 =     &#x03C9;kXt- k
        k=0
@@ -574,19 +660,19 @@ class="cmmi-8">k</span></sub>. This is shown in the equations
 below:
 <center class="par-math-display" >
 <img 
-src="/paper/Paper7x.png" alt="           n
+src="Paper7x.png" alt="           n
 X&#x02C6;     =  &#x2211;  wX
   t- k+1    k=0    t-k-j
 " class="par-math-display" ></center>
 <!--l. 477--><p class="nopar" >
 <center class="par-math-display" >
 <img 
-src="/paper/Paper8x.png" alt="&#x03C9;k = argmin { (X &#x02C6;t -k+1 - Xt- k+1)2}
+src="Paper8x.png" alt="&#x03C9;k = argmin { (X &#x02C6;t -k+1 - Xt- k+1)2}
 " class="par-math-display" ></center>
 <!--l. 482--><p class="nopar" >
 <center class="par-math-display" >
 <img 
-src="/paper/Paper9x.png" alt="        n
+src="Paper9x.png" alt="        n
 &#x02C6;      &#x2211;
 Xt+1 =     &#x03C9;kXt- k
        k=0
@@ -644,7 +730,7 @@ class="cmmi-12">A</span>) and subtracting the
 starting capital ($100,000).
 <center class="par-math-display" >
 <img 
-src="/paper/Paper10x.png" alt="P =  A - Ci
+src="Paper10x.png" alt="P =  A - Ci
 " class="par-math-display" ></center>
 <!--l. 522--><p class="nopar" >
 <!--l. 525--><p class="noindent" >The following is a comparison of the net profits achieved from both variations of the Wiener Filter
@@ -663,7 +749,7 @@ class="cmr-12">= 10</span>
                                                                                          
 
 <!--l. 532--><p class="noindent" ><img 
-src="/paper/3_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_wiener-prof-10.png" alt="PIC"  
+src="3_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_wiener-prof-10.png" alt="PIC"  
 >
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;4.1: </span><span  
@@ -690,7 +776,7 @@ class="cmr-12">= 40</span>
                                                                                          
 
 <!--l. 546--><p class="noindent" ><img 
-src="/paper/4_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_wiener-prof-40.png" alt="PIC"  
+src="4_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_wiener-prof-40.png" alt="PIC"  
 >
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;4.2: </span><span  
@@ -730,7 +816,7 @@ class="cmr-12">= 10</span>
                                                                                          
 
 <!--l. 576--><p class="noindent" ><img 
-src="/paper/5_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_wiener-pred-strict-10.png" alt="PIC"  
+src="5_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_wiener-pred-strict-10.png" alt="PIC"  
 >
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;4.3: </span><span  
@@ -761,7 +847,7 @@ class="cmr-12">= 40</span>
                                                                                          
 
 <!--l. 595--><p class="noindent" ><img 
-src="/paper/6_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_wiener-pred-strict-40.png" alt="PIC"  
+src="6_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_wiener-pred-strict-40.png" alt="PIC"  
 >
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;4.4: </span><span  
@@ -790,7 +876,7 @@ class="cmr-12">= 10</span>
                                                                                          
 
 <!--l. 612--><p class="noindent" ><img 
-src="/paper/7_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_wiener-pred-relaxed-10.png" alt="PIC"  
+src="7_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_wiener-pred-relaxed-10.png" alt="PIC"  
 >
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;4.5: </span><span  
@@ -820,7 +906,7 @@ class="cmr-12">= 40</span>
                                                                                          
 
 <!--l. 629--><p class="noindent" ><img 
-src="/paper/8_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_wiener-pred-relaxed-40.png" alt="PIC"  
+src="8_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_wiener-pred-relaxed-40.png" alt="PIC"  
 >
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;4.6: </span><span  
@@ -936,7 +1022,7 @@ class="cmmi-12">&#x03B1;</span><span
 class="cmr-12">) </span><span 
 class="cmsy-10x-x-120">- </span><span 
 class="cmr-12">4</span><img 
-src="/paper/Paper11x.png" alt="&#x221A; ------
+src="Paper11x.png" alt="&#x221A; ------
   1 - &#x03B1;"  class="sqrt" >
                                                                                          
                                                                                          
@@ -980,14 +1066,14 @@ calculations.
 class="ecbx-1200">Prediction Equations</span>
 <center class="par-math-display" >
 <img 
-src="/paper/Paper12x.png" alt="                    -
+src="Paper12x.png" alt="                    -
 X  =  X - + V - + A-s-
   p     s    s     2
 " class="par-math-display" ></center>
 <!--l. 779--><p class="nopar" >
 <center class="par-math-display" >
 <img 
-src="/paper/Paper13x.png" alt="       -    -
+src="Paper13x.png" alt="       -    -
 Vp = Vs +  As
 " class="par-math-display" ></center>
 <!--l. 784--><p class="nopar" >
@@ -997,24 +1083,24 @@ class="ecbx-1200">Update Equations</span>
                                                                                          
 <center class="par-math-display" >
 <img 
-src="/paper/Paper14x.png" alt="            &#x02C6;
+src="Paper14x.png" alt="            &#x02C6;
 Residual =  X -  Xp
 " class="par-math-display" ></center>
 <!--l. 791--><p class="nopar" >
 <center class="par-math-display" >
 <img 
-src="/paper/Paper15x.png" alt="X  = X   + &#x03B1; * Residual
+src="Paper15x.png" alt="X  = X   + &#x03B1; * Residual
   s    p
 " class="par-math-display" ></center>
 <!--l. 796--><p class="nopar" >
 <center class="par-math-display" >
 <img 
-src="/paper/Paper16x.png" alt="Vs = Vp + &#x03B2; * Residual
+src="Paper16x.png" alt="Vs = Vp + &#x03B2; * Residual
 " class="par-math-display" ></center>
 <!--l. 801--><p class="nopar" >
 <center class="par-math-display" >
 <img 
-src="/paper/Paper17x.png" alt="       -
+src="Paper17x.png" alt="       -
 As = A s + &#x03B3; * Residual
 " class="par-math-display" ></center>
 <!--l. 806--><p class="nopar" >
@@ -1066,7 +1152,7 @@ class="cmmi-12">A</span>) and subtracting the
 starting capital ($100,000).
 <center class="par-math-display" >
 <img 
-src="/paper/Paper18x.png" alt="P =  A - Ci
+src="Paper18x.png" alt="P =  A - Ci
 " class="par-math-display" ></center>
 <!--l. 842--><p class="nopar" >
 <!--l. 845--><p class="noindent" >The following is a comparison between the net profit achieved by applying the Alpha-Beta-Gamma
@@ -1088,7 +1174,7 @@ class="cmr-12">8</span>
                                                                                          
 
 <!--l. 852--><p class="noindent" ><img 
-src="/paper/9_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_Abg-NetProfit80.png" alt="PIC"  
+src="9_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_Abg-NetProfit80.png" alt="PIC"  
 >
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;5.1: </span><span  
@@ -1123,7 +1209,7 @@ class="cmr-12">2</span>
                                                                                          
 
 <!--l. 869--><p class="noindent" ><img 
-src="/paper/10_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_Abg-NetProfit20.png" alt="PIC"  
+src="10_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_Abg-NetProfit20.png" alt="PIC"  
 >
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;5.2: </span><span  
@@ -1189,7 +1275,7 @@ class="cmr-12">8</span>
                                                                                          
 
 <!--l. 910--><p class="noindent" ><img 
-src="/paper/11_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_Abg-pred80.png" alt="PIC"  
+src="11_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_Abg-pred80.png" alt="PIC"  
 >
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;5.3: </span><span  
@@ -1228,7 +1314,7 @@ class="cmr-12">2</span>
                                                                                          
 
 <!--l. 936--><p class="noindent" ><img 
-src="/paper/12_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_Abg-pred20.png" alt="PIC"  
+src="12_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_Abg-pred20.png" alt="PIC"  
 >
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;5.4: </span><span  
@@ -1275,7 +1361,7 @@ class="cmmi-12">UPS </span>instrument.
                                                                                          
 
 <!--l. 972--><p class="noindent" ><img 
-src="/paper/13_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_Abg-alphaAll.png" alt="PIC"  
+src="13_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_Abg-alphaAll.png" alt="PIC"  
 >
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;5.5: </span><span  
@@ -1331,7 +1417,7 @@ point.
 <!--l. 1023--><p class="noindent" >The prediction model can be represented in matrix form as
 <center class="math-display" >
 <img 
-src="/paper/Paper19x.png" alt="Sk =  R
+src="Paper19x.png" alt="Sk =  R
 " class="math-display" ></center>
 <!--l. 1026--><p class="nopar" >
 <!--l. 1028--><p class="noindent" >
@@ -1370,30 +1456,30 @@ gives the vector <span
 class="cmmi-12">R</span>. Accordingly, multiplication of any individual row of <span 
 class="cmmi-12">S</span>, denoted as
 <img 
-src="/paper/Paper20x.png" alt="-&#x2192;
+src="Paper20x.png" alt="-&#x2192;
  S "  class="pic-halign" >                                                                                      , by <span 
 class="cmmi-12">k </span>gives the corresponding
 row in <span 
 class="cmmi-12">R</span>, denoted as <img 
-src="/paper/Paper21x.png" alt="-&#x2192;R  "  class="pic-halign" >                                                                                                 .
+src="Paper21x.png" alt="-&#x2192;R  "  class="pic-halign" >                                                                                                 .
 <!--l. 1041--><p class="noindent" >To create a prediction model in this form, we build <span 
 class="cmmi-12">S </span>and <span 
 class="cmmi-12">R </span>by taking stimulants and responses
 from a dataset. In this paper we build this model using the price history of a stock. Each row
 <img 
-src="/paper/Paper22x.png" alt="-&#x2192;S "  class="pic-halign" >                                                                                      is constructed
+src="Paper22x.png" alt="-&#x2192;S "  class="pic-halign" >                                                                                      is constructed
 by collecting <span 
 class="cmmi-12">n </span>data points. Each successive row gathers <span 
 class="cmmi-12">n </span>points shifting forward by a predetermined <span 
 class="ecbx-1200">step</span>
 <span 
 class="ecbx-1200">length</span>. Each row <img 
-src="/paper/Paper23x.png" alt="-&#x2192;
+src="Paper23x.png" alt="-&#x2192;
 R  "  class="pic-halign" >
 is constructed by collecting the 1st data point following the <span 
 class="cmmi-12">n </span>points collected for
 <img 
-src="/paper/Paper24x.png" alt="-&#x2192;S "  class="pic-halign" >                                                                                      .
+src="Paper24x.png" alt="-&#x2192;S "  class="pic-halign" >                                                                                      .
                                                                                          
                                                                                          
 <!--l. 1049--><p class="noindent" >Mathematically where <span 
@@ -1402,41 +1488,41 @@ class="cmmi-12">s</span><span
 class="ecbx-1200">:</span>
 <center class="par-math-display" >
 <img 
-src="/paper/Paper25x.png" alt="-&#x2192;S1 = [ pi pi+1  ...  pi+n ]
+src="Paper25x.png" alt="-&#x2192;S1 = [ pi pi+1  ...  pi+n ]
 " class="par-math-display" ></center>
 <!--l. 1054--><p class="nopar" >
 <center class="par-math-display" >
 <img 
-src="/paper/Paper26x.png" alt="-R&#x2192;1 =  [ pi+n+1 ]
+src="Paper26x.png" alt="-R&#x2192;1 =  [ pi+n+1 ]
 " class="par-math-display" ></center>
 <!--l. 1060--><p class="nopar" >
 <center class="math-display" >
 <img 
-src="/paper/Paper27x.png" alt="-&#x2192;
+src="Paper27x.png" alt="-&#x2192;
 S2 = [ pi+s  pi+s+1  ...  pi+s+n ]
 " class="math-display" ></center>
 <!--l. 1064--><p class="nopar" >
 <center class="par-math-display" >
 <img 
-src="/paper/Paper28x.png" alt="-&#x2192;
+src="Paper28x.png" alt="-&#x2192;
 R2 =  [ pi+s+n+1 ]
 " class="par-math-display" ></center>
 <!--l. 1070--><p class="nopar" >
 <center class="par-math-display" >
 <img 
-src="/paper/Paper29x.png" alt="-&#x2192;
+src="Paper29x.png" alt="-&#x2192;
 Sm  = [ pi+ms   pi+ms+1  ...  pi+ms+n ]
 " class="par-math-display" ></center>
 <!--l. 1076--><p class="nopar" >
 <center class="par-math-display" >
 <img 
-src="/paper/Paper30x.png" alt="-&#x2192;
+src="Paper30x.png" alt="-&#x2192;
 Rm  = [ pi+ms+n+1 ]
 " class="par-math-display" ></center>
 <!--l. 1082--><p class="nopar" >
 <center class="math-display" >
 <img 
-src="/paper/Paper31x.png" alt="
+src="Paper31x.png" alt="
 " class="math-display" ></center>
                                                                                          
                                                                                          
@@ -1457,7 +1543,7 @@ introduced in the calculation. Skipping the derivation of this formula, the equa
 follows:
 <center class="par-math-display" >
 <img 
-src="/paper/Paper32x.png" alt="       T  - 1 T
+src="Paper32x.png" alt="       T  - 1 T
 k = (S  S )  S R
 " class="par-math-display" ></center>
 <!--l. 1095--><p class="nopar" >
@@ -1500,7 +1586,7 @@ class="ecbx-1200">Data: </span>[14.5, 15, 14.8, 15.2, 15.7, 16.5, 15.6, 14.3, 14
 <!--l. 1135--><p class="noindent" ><span 
 class="ecbx-1200">Graph:</span>
 <!--l. 1137--><p class="noindent" ><img 
-src="/paper/14_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_lin-prices-small.png" alt="PIC"  
+src="14_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_lin-prices-small.png" alt="PIC"  
 >
 <!--l. 1139--><p class="noindent" >Take <span 
 class="cmmi-12">n </span><span 
@@ -1512,7 +1598,7 @@ class="ecbx-1200">.</span>
 class="cmmi-12">S </span>is constructed as follows:
 <center class="par-math-display" >
 <img 
-src="/paper/Paper33x.png" alt="     &#x230A; 14.5   15   14.8 &#x230B;
+src="Paper33x.png" alt="     &#x230A; 14.5   15   14.8 &#x230B;
      ||  15   14.8  15.2 ||
 S =  |                  |
      &#x2308; 14.8  15.2  15.7 &#x2309;
@@ -1527,7 +1613,7 @@ class="ecbx-1200">Data</span>; etc...
 class="cmmi-12">R </span>is constructed as follows:
 <center class="par-math-display" >
 <img 
-src="/paper/Paper34x.png" alt="     &#x230A;  15  &#x230B;
+src="Paper34x.png" alt="     &#x230A;  15  &#x230B;
      || 15.7 ||
 R =  |      |
      &#x2308; 16.5 &#x2309;
@@ -1546,7 +1632,7 @@ class="cmmi-12">R</span>, and we seek to solve for the value of <span
 class="cmmi-12">k</span>.
 <center class="par-math-display" >
 <img 
-src="/paper/Paper35x.png" alt="    &#x230A;  k1 &#x230B;
+src="Paper35x.png" alt="    &#x230A;  k1 &#x230B;
     ||  k  ||
 k = |   2 |
     &#x2308;  ... &#x2309;
@@ -1562,12 +1648,12 @@ class="cmmi-12">R</span>.
                                                                                          
 <center class="par-math-display" >
 <img 
-src="/paper/Paper36x.png" alt="
+src="Paper36x.png" alt="
 " class="par-math-display" ></center>
 <!--l. 1194--><p class="nopar" >
 <center class="math-display" >
 <img 
-src="/paper/Paper37x.png" alt="                  &#x230A;    &#x230B;
+src="Paper37x.png" alt="                  &#x230A;    &#x230B;
 [               ] | k1 |
   14.5  15   14.8   &#x2308; k2 &#x2309; = 15
                     k3
@@ -1617,7 +1703,7 @@ class="cmmi-12">A</span>) and subtracting the
 starting capital ($100,000).
 <center class="par-math-display" >
 <img 
-src="/paper/Paper38x.png" alt="P =  A - C
+src="Paper38x.png" alt="P =  A - C
            i
 " class="par-math-display" ></center>
 <!--l. 1229--><p class="nopar" >
@@ -1633,7 +1719,7 @@ class="ecbx-1200">Simulation Results with filter length 1000</span>
                                                                                          
 
 <!--l. 1235--><p class="noindent" ><img 
-src="/paper/15_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_lin-prof-1000.png" alt="PIC"  
+src="15_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_lin-prof-1000.png" alt="PIC"  
 >
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;6.1: </span><span  
@@ -1659,7 +1745,7 @@ class="ecbx-1200">Simulation Results with filter length 2000</span>
                                                                                          
 
 <!--l. 1252--><p class="noindent" ><img 
-src="/paper/16_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_lin-prof-2000.png" alt="PIC"  
+src="16_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_lin-prof-2000.png" alt="PIC"  
 >
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;6.2: </span><span  
@@ -1694,7 +1780,7 @@ class="ecbx-1200">Simulation Results with filter length 1000</span>
                                                                                          
 
 <!--l. 1281--><p class="noindent" ><img 
-src="/paper/17_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_lin-pred-1000.png" alt="PIC"  
+src="17_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_lin-pred-1000.png" alt="PIC"  
 >
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;6.3: </span><span  
@@ -1720,7 +1806,7 @@ class="ecbx-1200">Simulation Results with filter length 2000</span>
                                                                                          
 
 <!--l. 1302--><p class="noindent" ><img 
-src="/paper/18_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_lin-pred-2000.png" alt="PIC"  
+src="18_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_lin-pred-2000.png" alt="PIC"  
 >
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;6.4: </span><span  
@@ -1755,7 +1841,7 @@ short filter length between 200 and 800 are generally more optimal parameters.
                                                                                          
 
 <!--l. 1337--><p class="noindent" ><img 
-src="/paper/19_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_lin-vary-ups.png" alt="PIC"  
+src="19_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_lin-vary-ups.png" alt="PIC"  
 >
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;6.5: </span><span  
@@ -1773,7 +1859,7 @@ class="content">Varying filter length for UPS</span></div><!--tex4ht:label?: x1-
                                                                                          
 
 <!--l. 1344--><p class="noindent" ><img 
-src="/paper/20_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_lin-vary-ACN.png" alt="PIC"  
+src="20_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_lin-vary-ACN.png" alt="PIC"  
 >
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;6.6: </span><span  
@@ -1817,7 +1903,7 @@ section.
                                                                                          
 
 <!--l. 1384--><p class="noindent" ><img 
-src="/paper/21_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_comptable.png" alt="PIC"  
+src="21_Users_dduggan_Dropbox_Wash_U_Senior_Year_senior_design_images_comptable.png" alt="PIC"  
 >
 <br /> <div class="caption" 
 ><span class="id">Figure&#x00A0;7.1: </span><span  
@@ -1848,15 +1934,8 @@ class="content">Algorithm Comparison trading the UPS instrument</span></div><!--
  id="x1-610008"></a>Code</h2>
 <h3 class="sectionHead"><span class="titlemark">8.1   </span> <a 
  id="x1-620008.1"></a>Alpha Beta Gamma Filter</h3>
-
-
-   </div> <!-- end col -->
-</div> <!-- end row -->
-
-</div>
-</div>
-</body>
-</html> 
+ 
+</body></html> 
 
                                                                                          
 
